@@ -1,50 +1,55 @@
-# Saket Dandekar — macOS Portfolio
+# Saket Dandekar — Browser macOS Portfolio
 
-A browser-based portfolio environment inspired by macOS, built as an original implementation for **Saket Dandekar**.
+A production-ready static portfolio experience designed as a browser-based macOS environment.
 
-## Experience
-- Full-screen desktop + layered wallpaper
-- macOS-style top menu bar and centered notch
-- Bottom Dock with magnification, running states and Trash
-- Draggable, resizable, focusable, minimizable and maximizable windows
-- Genie-style minimize animation
-- Finder
+## Experience architecture
+
+- Full-screen desktop + boot sequence
+- macOS-style menu bar and centered Notch
+- Bottom Dock with hover magnification and app indicators
+- Finder-style portfolio navigation
+- Seven independent analytics / BI projects
+- Separate digital marketing / growth workspace
+- Creative Archive / Photos workspace
+- Notes / Resume workspace with verified profile and credentials
+- Terminal with safe portfolio commands
+- Xcode / Analytics Lab for Power BI, DAX, Python, SQL and automation examples
+- Safari-style verified links
 - Spotlight (Cmd/Ctrl + K)
 - Launchpad
 - Control Center
-- Siri-style deterministic portfolio assistant
-- Terminal with safe portfolio commands
-- Xcode-style Analytics Lab
-- Photos / Creative Archive
-- Notes / Resume
-- Safari / verified links
-- Analytics, Growth and Creative sections kept separate
+- Deterministic Siri-style portfolio routing
+- Window drag, resize, maximize, focus, close and Genie-style minimize
+- Desktop context menu
+- Wallpaper switching
+- Reduced-motion support
+- Responsive mobile adaptation
+- Accessible labels, focusable controls and keyboard shortcuts
 
-## Portfolio structure
-### Data Analytics / Business Intelligence
-Seven personal / independent portfolio projects:
-1. Retail Sales Performance
-2. Customer Churn Analysis
-3. E-commerce Funnel Analysis
-4. Financial Performance Analysis
-5. Customer Segmentation & LTV
-6. HR Attrition & Workforce Analytics
-7. Mutual Fund Performance Comparison
+## Source policy
 
-### Digital Marketing / Growth
-SEO, SEM, social media, affiliate marketing, content marketing, e-commerce, CRM, performance marketing and automation-oriented work.
+Content is intentionally separated from the reference experience.
 
-### Graphic Design / Creative
-GreenWeld, MAGNARC, Vishwakarma, Raksha Bandhan, Antara Edits, Janmashtami and related visual work.
+**Identity/content sources**
+1. Saket Dandekar resume
+2. Saket's public LinkedIn: https://www.linkedin.com/in/visitsaket
+3. Saket's public GitHub: https://github.com/justsaket
+4. Verified portfolio project repository: https://github.com/justsaket/new-portfolio
+5. Supplied creative archive: https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link
 
-## Verified links
-- LinkedIn: https://www.linkedin.com/in/visitsaket
-- GitHub: https://github.com/justsaket
-- Portfolio repo: https://github.com/justsaket/saketp
-- Creative archive: https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link
+**Reference**
+- https://pratikdhandare.vercel.app/ is used only as the interaction/experience benchmark.
 
-## Deploy
-This is a static site. Import the repository into Vercel with no special build step.
+No Pratik Dhandare identity, projects, credentials or personal content are used.
 
-## Accuracy note
-Portfolio content is intentionally conservative. Where a business outcome, certificate or metric is not verified, the interface avoids inventing one.
+## Creative assets
+
+The UI does **not** fabricate or redraw portfolio artwork. Creative archive entries point to the supplied Drive source until the original individual files are synced into `public/assets/graphic-design/...`.
+
+MAGNARC is treated as a trademark: the supplied mark must be used unchanged when its source artwork is available.
+
+## Deployment
+
+This repository is intentionally deployable as a static site on Vercel. There is no server dependency or secret required for the portfolio experience.
+
+Open `index.html` locally or connect this repository to Vercel.
