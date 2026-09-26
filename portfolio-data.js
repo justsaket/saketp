@@ -24,7 +24,7 @@ jobs:[
 ['NOV 2024 — PRESENT','Co-Founder / Operations & Growth Lead','Digital Finvest · Taste Plaza · Asketrulize'],
 ['JUL 2023 — MAR 2024','Business Development Executive','Chal Digital'],
 ['JUN 2022 — APR 2023','Network Marketing Associate','Forever Living Products']
-];
-const skills=['SEO','SEM','Social Media Marketing','Affiliate Marketing','Brand Building','Content Marketing','E-Commerce','Power BI','Google Analytics','Advanced Excel','Data Analytics','Business Intelligence','Python','C++','HTML','WordPress','Shopify','CRM','Automation','Canva','Adobe Creative Cloud','CorelDRAW','Tally Prime','Financial Accounting']
+],
+skills:['SEO','SEM','Social Media Marketing','Affiliate Marketing','Brand Building','Content Marketing','E-Commerce','Power BI','Google Analytics','Advanced Excel','Data Analytics','Business Intelligence','Python','C++','HTML','WordPress','Shopify','CRM','Automation','Canva','Adobe Creative Cloud','CorelDRAW','Tally Prime','Financial Accounting']
 
 };
