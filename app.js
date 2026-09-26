@@ -1,41 +1,42 @@
 
-const analyticsProjects=[
-{id:'01',title:'Retail Sales Intelligence',cat:'Sales / BI',desc:'Executive analysis of revenue, profit, margin, region, category and product drivers using the supplied portfolio sample.',tools:'Python · Pandas · SQL · Power BI · DAX · Data Visualization',method:['Revenue & profit KPI layer','Margin, region, category and product analysis','Exception framing and action-oriented dashboard structure'],insights:['Electronics is the largest revenue contributor in the supplied sample','South is the largest regional profit contributor','West is the lowest regional profit contributor; the project frames mix/pricing as an investigation area rather than a causal conclusion'],repo:'https://github.com/justsaket/new-portfolio/tree/main/01-retail-sales'},
-{id:'02',title:'Customer Retention Intelligence',cat:'Customer / BI',desc:'Independent customer-retention analysis covering churn, plan, tenure, engagement and support patterns.',tools:'Python · Pandas · SQL · Power BI · Customer Segmentation · Retention Analytics',method:['Customer-base and churn KPI layer','Plan, tenure, engagement and support segmentation','Observed-pattern vs interpretation separation'],insights:['Basic and Standard show higher churn rates than Premium in the supplied sample','Churned customers show different login/support patterns','These are descriptive sample patterns, not causal proof'],repo:'https://github.com/justsaket/new-portfolio/tree/main/02-customer-churn'},
-{id:'03',title:'E-commerce Funnel Intelligence',cat:'Funnel / Growth',desc:'Acquisition-to-purchase funnel analysis focused on leakage, channel comparison and conversion economics.',tools:'Python · Pandas · SQL · Power BI · Funnel Analytics · Conversion Optimization',method:['Visits → engagement → cart → checkout → purchase mapping','Channel conversion comparison','Funnel leakage and growth-action framing'],insights:['Email has the strongest conversion rate in the supplied sample at 16.37%','Social is 2.80% despite significant traffic','The dashboard highlights Social landing-page/message fit as an investigation area'],repo:'https://github.com/justsaket/new-portfolio/tree/main/03-ecommerce-funnel'},
-{id:'04',title:'Financial Performance Command Center',cat:'Finance / BI',desc:'Management-reporting analysis connecting revenue, COGS, gross profit, operating expenses and operating profit.',tools:'Python · Pandas · SQL · Power BI · DAX · Financial Analysis · Management Reporting',method:['P&L-style KPI model','Period and margin movement analysis','Cost structure and profitability-bridge thinking'],insights:['The supplied sample moves from ₹8.50L revenue in January to ₹13.40L in August','Operating profit moves from ₹0.65L to ₹2.22L over the same sample period','The project focuses on growth quality and margin sustainability'],repo:'https://github.com/justsaket/new-portfolio/tree/main/04-financial-performance'},
-{id:'05',title:'Marketing & Automation Command Center',cat:'Automation / BI',desc:'End-to-end portfolio project combining LinkedIn publishing, AI calling, API lead generation and AI workflow agents.',tools:'n8n · APIs · Python · SQL · Webhooks · AI Agents · CRM concepts · Automation Analytics',method:['Sources/APIs → validation → normalization → deduplication','Lead scoring → automation router → approved action','Event logging and KPI layer'],insights:['LinkedIn publishing workflow includes validation and event logging','AI calling architecture separates lead context, conversation state, outcome and follow-up','API lead generation includes normalization, deduplication and scoring','Calling requires a connected provider plus appropriate consent/compliance controls'],repo:'https://github.com/justsaket/new-portfolio/tree/main/05-marketing-automation'},
-{id:'06',title:'Analytics & Business Intelligence Command Center',cat:'Multi-domain BI',desc:'Four executive analytics use cases: Customer Segmentation & LTV, HR Attrition, Financial Performance and Mutual Fund Comparison.',tools:'Power BI · Python · Pandas · SQL · Excel · DAX concepts · Data Modeling · Business Intelligence',method:['Source data → data quality → model concepts','KPI measures → segmentation / variance / risk analysis','Drill-down → executive insight → action'],insights:['Customer work focuses on RFM-style thinking, segment profiling and LTV','HR work covers attrition by department, role, tenure, age, overtime and satisfaction','Finance work covers revenue, cost, profit and margin movement','Fund comparison covers return, volatility and drawdown; it is analytical research, not investment advice'],repo:'https://github.com/justsaket/new-portfolio/tree/main/06-analytics-business-intelligence'},
-{id:'07',title:'Digital Marketing Intelligence',cat:'Marketing Analytics',desc:'Integrated SEO optimization, Google Ads simulation and a three-month content calendar as one measurable campaign system.',tools:'SEO · Google Ads concepts · Python · SQL · Analytics · Content Strategy · Campaign Measurement · Power BI',method:['SEO opportunity audit','Paid-search simulation with CTR, CPC, spend, conversions and ROAS','Content planning across pillars, formats, funnel stages and channels'],insights:['SEO analysis covers search intent, metadata, structure, internal links and keyword opportunities','Google Ads numbers are explicitly simulation data, not campaign claims','Content measurement follows awareness → traffic → engagement → conversion → revenue'],repo:'https://github.com/justsaket/new-portfolio/tree/main/07-digital-marketing-intelligence'}
-];const creativeWorks=[
-{id:'g1',title:'GreenWeld',type:'Creative Archive',tone:'green',desc:'Real creative-work archive entry. Original artwork is sourced from the supplied Google Drive archive; this UI does not fabricate a replacement asset.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g2',title:'MAGNARC',type:'Creative Archive',tone:'blue',desc:'Real creative-work archive entry. The supplied MAGNARC trademark artwork must be used unchanged; this UI does not redraw the mark.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g3',title:'Vishwakarma Puja',type:'Campaign Archive',tone:'orange',desc:'Creative archive entry for the supplied Vishwakarma Puja campaign work. Open the source archive for the original artwork.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g4',title:'Raksha Bandhan',type:'Campaign Archive',tone:'violet',desc:'Creative archive entry for the supplied Raksha Bandhan campaign work. Open the source archive for the original artwork.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g5',title:'Antara Edits',type:'Creator Archive',tone:'blue',desc:'Creative archive entry for the supplied short-form entertainment/creator work. Open the source archive for original assets.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g6',title:'Product Visuals',type:'Creative Archive',tone:'green',desc:'Real product-visual archive category. Original files are intentionally not replaced with generated mock artwork.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g7',title:'Social Creative',type:'Creative Archive',tone:'orange',desc:'Real social-creative archive category. Original files remain the source of truth.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'},
-{id:'g8',title:'Campaign Archive',type:'Creative Archive',tone:'violet',desc:'Additional campaign archive category sourced from the supplied creative archive.',source:'https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link'}
-];const jobs=[
-['NOV 2025 — APR 2026','Social Media Executive','Rungta International Skills University'],
-['NOV 2024 — PRESENT','Co-Founder / Operations & Growth Lead','Digital Finvest · Taste Plaza · Asketrulize'],
-['JUL 2023 — MAR 2024','Business Development Executive','Chal Digital'],
-['JUN 2022 — APR 2023','Network Marketing Associate','Forever Living Products']
-];
-const skills=['SEO','SEM','Social Media Marketing','Affiliate Marketing','Brand Building','Content Marketing','E-Commerce','Power BI','Google Analytics','Advanced Excel','Data Analytics','Business Intelligence','Python','C++','HTML','WordPress','Shopify','CRM','Automation','Canva','Adobe Creative Cloud','CorelDRAW','Tally Prime','Financial Accounting'];
+const {analyticsProjects, creativeWorks, jobs, skills} = window.PortfolioData;
+
+const AppRegistry = Object.freeze({
+  finder:'winFinder', analytics:'winAnalytics', creative:'winCreative', about:'winAbout',
+  contact:'winContact', terminal:'winTerminal', lab:'winLab', photos:'winPhotos',
+  notes:'winNotes', safari:'winSafari'
+});
+const WindowManager = (() => {
+  let topZ = 350;
+  const get = id => document.getElementById(id);
+  const focus = id => {
+    const w=get(id); if(!w) return;
+    w.style.zIndex=++topZ;
+    document.getElementById('activeApp').textContent=appForWindow(id);
+    document.getElementById('notchApp').textContent=appForWindow(id);
+    document.querySelectorAll('.window').forEach(x=>x.classList.toggle('focus',x===w));
+  };
+  const open = id => { const w=get(id); if(!w)return; w.classList.remove('minimizing'); w.classList.add('show','focus'); focus(id); };
+  const close = id => { const w=get(id); if(w) w.classList.remove('show','focus','full','minimizing'); };
+  const minimize = id => {
+    const w=get(id); if(!w)return;
+    const dock=document.getElementById('dock');
+    const target=dock?.getBoundingClientRect();
+    if(target){ const r=w.getBoundingClientRect(); w.style.setProperty('--genie-x',(target.left+target.width/2-r.left-r.width/2)+'px'); w.style.setProperty('--genie-y',(target.top+target.height/2-r.top-r.height/2)+'px'); }
+    w.classList.add('minimizing');
+    setTimeout(()=>{w.classList.remove('show','focus','minimizing');w.style.removeProperty('--genie-x');w.style.removeProperty('--genie-y')},430);
+  };
+  const maximize = id => get(id)?.classList.toggle('full');
+  return Object.freeze({get,focus,open,close,minimize,maximize});
+})();
 
 let z=350,workFilter='All';
 const windows=[...document.querySelectorAll('.window')];
 function appForWindow(id){return document.getElementById(id)?.dataset.app||'Finder'}
-function openWindow(id){
- const w=document.getElementById(id); if(!w)return;
- w.classList.add('show','focus');w.style.zIndex=++z;
- document.getElementById('activeApp').textContent=appForWindow(id);document.getElementById('notchApp').textContent=appForWindow(id);
- if(id==='winFinder')finderView('home');if(id==='winAnalytics')renderAnalytics();if(id==='winCreative')renderCreative();if(id==='winPhotos')renderPhotos();if(id==='winAbout')renderAbout();if(id==='winLab')showCode('overview');
-}
-function closeWindow(id){document.getElementById(id)?.classList.remove('show','focus','full')}
-function minimize(id){const w=document.getElementById(id);if(!w)return;w.classList.add('minimizing');setTimeout(()=>{w.classList.remove('show','focus','minimizing')},380)}
-function toggleMax(id){document.getElementById(id)?.classList.toggle('full')}
+function openWindow(id){ WindowManager.open(id); if(id==='winFinder')finderView('home');if(id==='winAnalytics')renderAnalytics();if(id==='winCreative')renderCreative();if(id==='winPhotos')renderPhotos();if(id==='winAbout')renderAbout();if(id==='winLab')showCode('overview'); }
+function closeWindow(id){WindowManager.close(id)}
+function minimize(id){WindowManager.minimize(id)}
+function toggleMax(id){WindowManager.maximize(id)}
 function openFinder(){openWindow('winFinder')}
 function openAnalytics(){openWindow('winAnalytics')}
 function openCreative(){openWindow('winCreative')}
