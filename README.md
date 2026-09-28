@@ -37,19 +37,3 @@ Content is intentionally separated from the reference experience.
 4. Verified portfolio project repository: https://github.com/justsaket/new-portfolio
 5. Supplied creative archive: https://drive.google.com/drive/folders/158EhPqMiCwT8OOZFJHC-UC4k-ACSL-T6?usp=drive_link
 
-**Reference**
-- https://pratikdhandare.vercel.app/ is used only as the interaction/experience benchmark.
-
-No Pratik Dhandare identity, projects, credentials or personal content are used.
-
-## Creative assets
-
-The UI does **not** fabricate or redraw portfolio artwork. Creative archive entries point to the supplied Drive source until the original individual files are synced into `public/assets/graphic-design/...`.
-
-MAGNARC is treated as a trademark: the supplied mark must be used unchanged when its source artwork is available.
-
-## Deployment
-
-This repository is intentionally deployable as a static site on Vercel. There is no server dependency or secret required for the portfolio experience.
-
-Open `index.html` locally or connect this repository to Vercel.
